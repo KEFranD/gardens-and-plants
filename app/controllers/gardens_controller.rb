@@ -15,10 +15,26 @@ class GardensController < ApplicationController
 
   def show
     @garden = Garden.find(params[:id])
+
+    if @garden.nil?
+      render_404
+    end
   end
 
   def edit
     @garden = Garden.find(params[:id])
+  end
+
+  def update
+    @garden = Garden.find(params[:id])
+    @garden.update(garden_params)
+    redirect_to garden_path(@garden)
+  end
+
+  def destroy
+    @garden = Garden.find(params[:id])
+    @garden.destroy
+    redirect_to gardens_path, status: :see_other
   end
 
   def home

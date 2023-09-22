@@ -1,2 +1,8 @@
 <h2><%= @garden.name %>🌿</h2>
+<p>
+  <%= link_to "Delete",
+    garden_path(@garden),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this garden?"}
+  %>
+</p>
 <%= link_to "Back to gardens", gardens_path %>
