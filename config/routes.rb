@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'gardens#home'
   get 'gardens', to: 'gardens#index'
+  get 'gardens/new', to: 'gardens#new'
+  post 'gardens', to: 'gardens#create'
   get 'gardens/:id', to: 'gardens#show', as: 'garden'
 end
