@@ -17,9 +17,12 @@ class GardensController < ApplicationController
     @garden = Garden.find(params[:id])
   end
 
-  def home
+  def edit
+    @garden = Garden.find(params[:id])
   end
 
+  def home
+  end
 
   private
 

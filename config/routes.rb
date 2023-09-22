@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'gardens/new', to: 'gardens#new'
   post 'gardens', to: 'gardens#create'
   get 'gardens/:id', to: 'gardens#show', as: 'garden'
+  get 'gardens/:id/edit', to: 'gardens#edit'
 end
