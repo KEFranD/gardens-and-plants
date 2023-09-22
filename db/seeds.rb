@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "Cleaning database..."
+Garden.destroy_all
+
+puts "Creating gardens..."
+Garden.create(name: "Enchanted Oasis Garden")
+Garden.create(name: "Bloomsbury Botanicals")
+Garden.create(name: "Wildflower Wonderland")
+
+puts "Finished!"
