@@ -1,6 +1,7 @@
-<h1>Gardens:</h1>
+<h1>Gardens🌱:</h1>
 <ul>
   <% @gardens.each do |garden| %>
-    <li><%= garden.name %></li>
+    <li><%= link_to garden.name, garden_path(garden) %></li>
   <% end %>
 </ul>
+<%= link_to "Home", root_path %>
