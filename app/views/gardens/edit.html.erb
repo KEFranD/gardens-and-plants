@@ -1,14 +1,3 @@
-<div class="navbar">
- <%= image_tag "plants-logo.png", alt: "plants-and-gardens-logo", class: "logo" %>
-  <nav>
-    <ul>
-      <li><%= link_to "HOME", root_path %></li>
-      <li><%= link_to "GARDENS", gardens_path %></li>
-      <li><%= link_to "ABOUT", gardens_path %></li>
-      <li><%= link_to "CONTACT US", gardens_path %></li>
-    </ul>
-  </nav>
-</div>
 <%= simple_form_for @garden do |f| %>
   <%= f.input :name %>
   <%= f.button :submit %>

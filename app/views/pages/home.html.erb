@@ -1,15 +1,10 @@
-<div class="navbar">
- <%= image_tag "plants-logo.png", alt: "plants-and-gardens-logo", class: "logo" %>
-  <nav>
-    <ul>
-      <li><%= link_to "HOME", root_path %></li>
-      <li><%= link_to "GARDENS", gardens_path %></li>
-      <li><%= link_to "ABOUT", gardens_path %></li>
-      <li><%= link_to "CONTACT US", gardens_path %></li>
-    </ul>
-  </nav>
-</div>
+
 <div class="container--home">
-  <%= image_tag "flowers.jpg", alt: "background-image" %>
-  <h1>Welcome to Gardens & Plants 🌸</h1>
+  <div class="row--home">
+    <div class="col--home">
+      <h1>Welcome to Garden Blooms</h1>
+      <h2>Exploring Nature's Beauty, One Garden at a Time</h2>
+      <%= link_to "Explore", {controller: "gardens", action: "index"}, class: "btn--home" %>
+    </div>
+  </div>
 </div>

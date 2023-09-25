@@ -1,26 +1,26 @@
-.navbar {
-  height: 12%;
+.navbar--home {
   display: flex;
   align-items: center;
-  background-color: rgb(247, 244, 168);
-  padding: 12px;
+  background-color: rgb(255, 246, 150);
+  padding: 25px 140px 25px 49px;
   align-content: space-between;
-  padding-left: 26px;
 }
 .logo {
   width: 60px;
   cursor: pointer;
 }
-nav {
+.nav--links {
+  display: flex;
   flex: 1;
   text-align: right;
   justify-content: flex-end;
-  padding: 30px 140px 30px 30px;
+  // padding: 30px 140px 30px 30px;
   align-items: center;
   ul li {
     list-style: none;
     display: inline-block;
     margin-left: 60px;
+    margin-top: 12px;
   }
   a {
     text-decoration: none;
