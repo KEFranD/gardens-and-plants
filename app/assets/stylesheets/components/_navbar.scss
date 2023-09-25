@@ -1,7 +1,7 @@
 .navbar--home {
   display: flex;
   align-items: center;
-  background-color: rgb(255, 246, 150);
+  background-color: rgb(254, 227, 255);
   padding: 25px 140px 25px 49px;
   align-content: space-between;
 }
@@ -26,5 +26,8 @@
     text-decoration: none;
     color: rgb(36, 36, 36);
     font-size: 18px;
+    &:hover {
+      color: rgb(197, 91, 253);
+    }
   }
 }

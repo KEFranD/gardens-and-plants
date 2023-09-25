@@ -1,8 +1,13 @@
-<h1>Gardens🌱:</h1>
-<ul>
-  <% @gardens.each do |garden| %>
-    <li><%= link_to garden.name, garden_path(garden) %></li>
-  <% end %>
-</ul>
-<%= link_to "Home", root_path %>
-<%= link_to "Add a garden", gardens_new_path %>
+<div class="container--card">
+  <h1>Gardens🌱:</h1>
+  <div class="card--contents">
+    <% @gardens.each do |garden| %>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1602070494476-45d0d2980e42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2971&q=80" class="card-img-top" alt="...">
+        <div class="card-body">
+          <%= link_to garden.name, garden_path(garden) %>
+        </div>
+     </div>
+   <% end %>
+  </div>
+</div>

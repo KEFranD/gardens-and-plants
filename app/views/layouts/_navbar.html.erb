@@ -1,11 +1,13 @@
 <div class="navbar--home">
-  <%= image_tag "plants-logo.png", alt: "plants-and-gardens-logo", class: "logo" %>
+  <%= link_to root_path do %>
+   <%= image_tag "plants-logo.png", alt: "plants-and-gardens-logo", class: "logo" %>
+  <% end %>
   <div class="nav--links">
     <ul>
       <li><%= link_to "HOME", root_path %></li>
       <li><%= link_to "GARDENS", gardens_path %></li>
       <li><%= link_to "ABOUT", gardens_path %></li>
-      <li><%= link_to "CONTACT US", gardens_path %></li>
+      <li><%= link_to "ADD GARDEN", gardens_new_path %></li>
     </ul>
   </div>
 </div>
