@@ -1,9 +1,14 @@
-<h2><%= @garden.name %>🌿</h2>
-<p>
-  <%= link_to "Edit", edit_garden_path(@garden) %>
-  <%= link_to "Delete",
-    garden_path(@garden),
-    data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this garden?"}
-  %>
-</p>
 <%= link_to "Back to gardens", gardens_path %>
+<div class="container--show">
+  <h2><%= @garden.name %>🌿</h2>
+  <div class="show--contents">
+    <p>
+    <%= link_to "Edit", edit_garden_path(@garden) %>
+    <%= link_to "Delete",
+      garden_path(@garden),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this garden?"}
+    %>
+    </p>
+    <img src="https://images.unsplash.com/photo-1602070494476-45d0d2980e42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2971&q=80" class="show--img" alt="...">
+  </div>
+</div>
