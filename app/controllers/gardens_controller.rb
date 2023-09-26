@@ -37,6 +37,9 @@ class GardensController < ApplicationController
     redirect_to gardens_path, status: :see_other
   end
 
+  def about
+  end
+
   private
 
   def garden_params
