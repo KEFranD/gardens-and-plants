@@ -19,3 +19,8 @@ Note: This project is inspired by a challenge featured during my time at Le Wago
 **Client:** HTML, CSS, SASS
 
 **Server:** Ruby on Rails
+
+
+## Screenshots
+
+<img width="1502" alt="gardens-screenshot" src="https://github.com/KEFranD/gardens-and-plants/assets/130538538/82553c65-b93b-49db-be84-2e48b35dff5c">
