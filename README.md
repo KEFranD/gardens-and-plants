@@ -1,24 +1,21 @@
-# README
+# Garden Website 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to my Garden Website project! This project is one of my first solo endeavors in building a full-fledged CRUD (Create, Read, Update, Delete) website. It allows users to create, view, edit, and delete different gardens. The project is developed using Ruby on Rails for the backend, HTML and CSS for the frontend, and Sass for styling. 🌿🌸🌼
 
-Things you may want to cover:
+Note: This project is inspired by a challenge featured during my time at Le Wagon Bootcamp. It showcases my learning journey and application of the skills acquired during the bootcamp.
+## Features
 
-* Ruby version
+- Create: Users can create new garden entries, providing details like garden name, location, and description.
 
-* System dependencies
+- Read: Gardens can be viewed by all users. Each garden entry displays its name, location, and a brief description.
 
-* Configuration
+- Update: Users can edit the details of existing garden entries, including the name, location, and description.
 
-* Database creation
+- Delete: Users have the option to delete garden entries they no longer want to keep in the system.
 
-* Database initialization
 
-* How to run the test suite
+## Tech Stack
 
-* Services (job queues, cache servers, search engines, etc.)
+**Client:** HTML, CSS, SASS
 
-* Deployment instructions
-
-* ...
+**Server:** Ruby on Rails
